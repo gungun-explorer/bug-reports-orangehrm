@@ -1,7 +1,7 @@
 Invalid Username Bug Report
 
 Overview
-This repository contains a bug report for the Demo Web Shop login functionality.
+This repository contains a bug report for the OrangeHRM login functionality.
 The issue: users can log in with an invalid username, which is a security flaw.
 
 Bug Details
