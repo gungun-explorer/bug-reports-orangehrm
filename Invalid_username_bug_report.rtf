@@ -1,0 +1,61 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 AppleColorEmoji;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww27120\viewh15360\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0  \
+ # 
+\f1 \uc0\u55357 \u56350 
+\f0  Bug Report: Invalid Username Login Issue  \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+*Project:* OrangeHRM Demo  \
+*URL:* [https://opensource-demo.orangehrmlive.com](https://opensource-demo.orangehrmlive.com)  \
+*Module:* Login Page  \
+*Reported by:* Gungun  \
+*Date:* 20-Sep-2025  \
+*Severity:* High  \
+*Priority:* High  \
+*Status:* New  \
+\
+## Description  \
+When trying to log in with an invalid username, the system still allows the user to successfully log in.  \
+This is a *security defect*, as authentication should validate correct credentials.  \
+\
+##  Steps to Reproduce  \
+1. Open the URL: [https://opensource-demo.orangehrmlive.com](https://opensource-demo.orangehrmlive.com)  \
+2. On the Login page, enter an *invalid username* (e.g., Amdin instead of Admin).  \
+3. Enter the correct password: admin123.  \
+4. Click on the *Login* button.  \
+\
+##  Expected Result  \
+The system should display an error message such as *"Invalid credentials"* and deny login.  \
+\
+## 
+\f1  
+\f0 Actual Result  \
+The system allows login even with an *invalid username*.  \
+\
+## 
+\f1  
+\f0 Test Data  \
+- Username: Amdin  \
+- Password: admin123  \
+\
+##  Impact  \
+- Security breach risk (unauthorized users may gain access).  \
+- Authentication validation failure.  \
+- Loss of system reliability.  \
+\
+##  Attachments  \
+- Screenshot: invalid_username_login.png  \
+\
+## 
+\f1 \uc0\u55357 \u56741 \u65039 
+\f0  Environment  \
+- Device: Mobile (Android)  \
+- Browser: Chrome  \
+- Application Version: OrangeHRM OS 5.7 (Demo site)  \
+}
